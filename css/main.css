@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-size: 80%;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-darkblack: #181918;
+    --color-lightgreen: #18BB18;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+
+/* nav */
+nav {
+    width: 100%;
+    height: 100%;
+    max-height: 70px;
+    
+    background-color: #181918;
+}
+
+#nav-bar {
+    display: flex;
+    margin-left: 152px;
+    margin-right: 152px;
+}
+
+.nav-img {
+    display: inline-block;
+    margin: 10px;
+}
+
+#nav-img {
+    
+}
+
+#nav-bar > ul {
+    display: flex;
+    flex-direction: row;
+    
+    margin-left: 130px;
+}
+
+#nav-bar > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    
+    list-style: none;
+}
+
+#nav-bar > ul > li > a {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    transition: color .3s ease-in-out;
+}
+
+#nav-bar > ul > li > a:hover {
+    color: var(--color-lightgreen);
+}
+
+.link-active {
+    color: var(--color-lightgreen) !important;
+}
+
+
+/* */
+.container {
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.intro {
+    margin: 150px 0;
+}
+
+.intro-img {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.intro-img > img {
+    margin-top: 58px;
+    width: 1400px;
+    height: 800px;
+}
+
+.intro-text {
+    margin-right: 135px;
+}
+
+.intro-text > h2 {
+    font-size: 6rem;
+    width: auto;
+    color: var(--color-lightgreen);
+}
+
+.intro-text > h3 {
+    font-size: 6rem;
+}
+
+.intro-text > h4 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 300;
+    
+    margin: 25px 0;
+}
+
+.intro-text > p {
+    color: #777;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn-section {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.btn-section > a {
+    background-color: #000;
+    
+    margin-right: 30px;
+    padding: 20px 70px;
+    
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.35rem;
+    
+    transition: background-color .4s ease-in-out;
+}
+
+.btn-section > a:hover {
+    background-color: var(--color-lightgreen);
+}
+
+.intro > ol {
+    display: flex;
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.intro > ol > li {
+    background-color: #000;
+    margin-right: 5px;
+    
+    height: 20px;
+    width: 20px;
+    
+    border-radius: 50px;
+    
+    list-style: none;
+}
+
+.intro > ol > li:first-child {
+    margin-left: 200px;
+}
+
+.active {
+    background-color: var(--color-lightgreen) !important;
+}
