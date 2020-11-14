@@ -84,62 +84,59 @@ nav {
 }
 
 .intro {
-    margin: 150px 0;
-}
-
-.intro-img {
-    float: left;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 17.3%;
+    z-index: 1;
+    width: 75%;
+    height: 100%;
+}
+
+
+.intro > img {
+    position: absolute;
+    top: -26%;
+    left: -25%;
     z-index: -1;
+    margin-top: 69px;
+    width: 175%;
+    height: 100%;
 }
 
-.intro-img > img {
-    margin-top: 58px;
-    width: 1400px;
-    height: 800px;
-}
 
-.intro-text {
-    margin-right: 135px;
-}
-
-.intro-text > h2 {
-    font-size: 6rem;
+.intro > h2 {
+    font-size: 5.8rem;
     width: auto;
     color: var(--color-lightgreen);
 }
 
-.intro-text > h3 {
-    font-size: 6rem;
+.intro > h3 {
+    font-size: 5.8rem;
 }
 
-.intro-text > h4 {
-    font-size: 3rem;
+.intro > h4 {
+    font-size: 2.6rem;
     color: #333;
     font-weight: 300;
     
     margin: 25px 0;
 }
 
-.intro-text > p {
-    color: #777;
-    font-size: 1.5rem;
+.intro > p {
+    color: #2f2f2f;
+    font-size: 1.55rem;
+    font-weight: 300;
     line-height: 1.7;
-    margin-bottom: 25px;
 }
 
 .btn-section {
-    display: inline-block;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .btn-section > a {
-    background-color: #000;
+    background-color: #120F0F;
     
     margin-right: 30px;
-    padding: 20px 70px;
+    padding: 18px 65px;
     
     text-decoration: none;
     color: #fff;
@@ -154,11 +151,7 @@ nav {
 
 .intro > ol {
     display: flex;
-    float: left;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
+    margin-top: 155px;
 }
 
 .intro > ol > li {
@@ -173,10 +166,18 @@ nav {
     list-style: none;
 }
 
-.intro > ol > li:first-child {
-    margin-left: 200px;
-}
-
 .active {
     background-color: var(--color-lightgreen) !important;
+}
+
+
+
+/* about */
+.about {
+    margin-top: 90px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
 }
